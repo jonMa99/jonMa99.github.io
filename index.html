@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content=""> -->
+    <title>Resume</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#links">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Skills</h2>
+            <article>
+                <p> <strong>Languages</strong> : Python, TypeScript, Java, HTML, CSS, PHP, MySQL, C, C++</p>
+            </article>
+            <article>
+                <p> <strong>Tools</strong> : Git, Linux, R</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article class="project">
+                <figure>
+                    <img src="./img/InsightUBC.png" alt="project">
+                </figure>
+                <div class="project-text">
+                    <h3>InsightUBC</h3>
+                    <p>A query engine made in <strong>TypeScript</strong> that parses data about UBC courses and rooms
+                        returns a subset of rooms or courses that fulfills a query.
+                        Also designed a course scheduler to maximize amount of students in rooms while minimizing
+                        distance between rooms</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <figure>
+                    <img src="./img/Roguelike-Game.png" alt="project">
+                </figure>
+                <div class="project-text">
+                    <h3><a class="project-link" target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/jonMa99/Roguelike-Game">
+                            Roguelike-Game</a></h3>
+                    <p>A turned-based game made in <strong>Python</strong> where the player traverses through levels to
+                        find an item,
+                        fighting monsters using equipment and magic. Used graph and graph traversals to implement
+                        pathfinding.</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <figure>
+                    <img src="./img/CityPost.png" alt="project">
+                </figure>
+                <div class="project-text">
+                    <h3><a class="project-link" target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/jonMa99/CityPost">CityPost</a></h3>
+                    <p>A website that models a courier service for customer, couriers and managers. Used a
+                        <strong>MySQL</strong> database to store data and <strong>PHP</strong> to query database and
+                        incorporate account-specific options like placing an order or setting courier routes. Used
+                        <strong>HTML</strong> and <strong>CSS</strong> to
+                        display data.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project">
+                <figure>
+                    <img src="./img/Chess.png" alt="project">
+                </figure>
+                <div class="project-text">
+                    <h3><a class="project-link" target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/jonMa99/Chess">Chess</a>
+                    </h3>
+                    <p>A chess game implemented in <strong>Java</strong> with a normal mode and freestyle mode. Has
+                        saving
+                        and loading of games.</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <figure>
+                    <img src="./img/Sudoku.png" alt="project">
+                </figure>
+                <div class="project-text">
+                    <h3><a class="project-link" target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/jonMa99/SudokuGame">Sudoku</a></h3>
+                    <p>A sudoku game with a random board generator implemented in <strong>Java</strong>. There is a
+                        sudoku board validator and board solver</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <figure>
+                    <img src="./img/TodoList.png" alt="project">
+                </figure>
+                <div class="project-text">
+                    <h3><a class="project-link" target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/jonMa99/TodoList">TodoList</a></h3>
+                    <p>A todo list written in <strong>Java</strong> that allowed searching for tasks based on location
+                        and can display the current weather in Vancouver. Saved task by reading and writing to text
+                        files.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer id="links">
+        <ul>
+            <li><a class="nav-link" href="https://github.com/jonma99">Github</a></li>
+            <li><a class="nav-link" href="mailto:jonathanmah99@gmail.com">Email</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

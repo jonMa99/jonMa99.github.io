@@ -1,0 +1,180 @@
+/* Global variables */
+:root {
+  --body-grey: #8d8d8d;
+  --background-grey: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  background: var(--body-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: DejaVu Serif, sans-serif, Helvetica;
+}
+
+header {
+  color: #a6a6a6;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: #242424;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.nav-links {
+  margin: 1vh;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.nav-link {
+  flex: 1;
+  text-decoration: none;
+}
+
+#skills {
+  padding: 0rem 1rem 0.5rem;
+}
+
+#projects h2 {
+  padding-bottom: 0rem;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project {
+  padding: 1rem;
+}
+
+.project img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+  width: 90%;
+}
+
+.project-text {
+  padding: 0rem 1rem;
+  text-align: left;
+}
+
+.project-text h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: var(--background-grey);
+  list-style: none;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+/* Responsive website css */
+
+/* Default is portrait phone */
+
+/* Landscape phone */
+@media screen and (min-width: 576px) {
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+  .project {
+    padding: 1rem;
+    display: flex;
+  }
+
+  .project img {
+    width: 95%;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: var(--background-grey);
+  }
+
+  main,
+  footer {
+    width: 75%;
+    margin: auto;
+    min-width: 992px;
+  }
+
+  footer {
+    background-color: var(--background-grey);
+  }
+
+  main {
+    background: var(--body-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project {
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+/* Larger desktop screens */
+@media screen and (min-width: 1200px) {
+  body {
+    /* background-image: linear-gradient(0deg, #0f0f0f, #636363); */
+    background-color: var(--background-grey);
+  }
+
+  main,
+  footer {
+    width: 75%;
+    margin: auto;
+  }
+
+  main {
+    background: var(--body-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project {
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+  }
+}
