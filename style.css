@@ -17,12 +17,14 @@ body {
   flex-direction: column;
   align-items: stretch;
   font-family: DejaVu Serif, sans-serif, Helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
   color: #a6a6a6;
   padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-bottom: 4.5vh;
   background: #242424;
 }
 
@@ -38,6 +40,13 @@ header h1 {
   text-align: center;
 }
 
+main {
+  z-index: 1;
+  background: var(--body-grey);
+  margin-top: -3vh;
+  margin-bottom: 3vh;
+}
+
 h2 {
   text-align: center;
   padding: 1rem 0rem;
@@ -48,8 +57,16 @@ h2 {
   text-decoration: none;
 }
 
+#education {
+  text-align: center;
+}
+
+#education h2 {
+  padding-bottom: 0;
+}
+
 #skills {
-  padding: 0rem 1rem 0.5rem;
+  padding: 0rem 2rem 0.5rem;
 }
 
 #projects h2 {
@@ -61,7 +78,10 @@ h2 {
 }
 
 .project {
-  padding: 1rem;
+  margin: 1rem;
+  padding: 1rem 0rem;
+  /* border-style: solid; */
+  border-radius: 2rem;
 }
 
 .project img {
@@ -82,10 +102,11 @@ h2 {
 }
 
 footer {
-  background-color: var(--background-grey);
+  color: #a6a6a6;
+  background: #242424;
   list-style: none;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
 }
 
 footer ul {
@@ -93,6 +114,10 @@ footer ul {
   list-style: none;
   justify-content: space-evenly;
   text-align: center;
+}
+
+main {
+  background: var(--body-grey);
 }
 
 /* Responsive website css */
@@ -131,11 +156,14 @@ footer ul {
   footer {
     width: 75%;
     margin: auto;
+    margin-top: -3vh;
     min-width: 992px;
   }
 
   footer {
-    background-color: var(--background-grey);
+    width: 100%;
+    color: #a6a6a6;
+    background: #242424;
   }
 
   main {
@@ -155,7 +183,6 @@ footer ul {
 /* Larger desktop screens */
 @media screen and (min-width: 1200px) {
   body {
-    /* background-image: linear-gradient(0deg, #0f0f0f, #636363); */
     background-color: var(--background-grey);
   }
 
@@ -163,6 +190,13 @@ footer ul {
   footer {
     width: 75%;
     margin: auto;
+    margin-top: -3vh;
+  }
+
+  footer {
+    width: 100%;
+    color: #a6a6a6;
+    background: #242424;
   }
 
   main {
