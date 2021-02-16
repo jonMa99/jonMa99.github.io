@@ -1,3 +1,8 @@
+function changeMenuIcon() {
+  const burgerMenu = document.querySelector("#hamburger-menu");
+  burgerMenu.classList.toggle("hamburger-menu-active");
+}
+
 function slideMenuIn() {
   const burgerMenu = document.querySelector("#hamburger-menu");
   const navLinks = document.querySelector(".nav-links");
@@ -9,11 +14,6 @@ function slideMenuIn() {
 
     changeMenuIcon();
   });
-}
-
-function changeMenuIcon() {
-  const burgerMenu = document.querySelector("#hamburger-menu");
-  burgerMenu.classList.toggle("hamburger-menu-active");
 }
 
 function slideMenuOut() {

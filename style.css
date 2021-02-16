@@ -7,6 +7,10 @@
   --header-background: #242424;
 
   /* Spacing size */
+  --hamburger-menu-spacing: 3px;
+
+  /* Animation timing */
+  --hamburger-menu-anim-duration: 0.3s;
 }
 
 * {
@@ -69,6 +73,9 @@ main {
   z-index: 1;
   background: var(--body-grey);
   margin-top: -3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 h2 {
@@ -87,28 +94,40 @@ h2 {
   position: relative;
   border: 3px solid var(--header-white);
   border-radius: 20%;
-  padding: 4px;
+  padding: var(--hamburger-menu-spacing);
+  margin: -1 * var(--hamburger-menu-spacing);
   z-index: 3;
-  scale: 0.7;
+  scale: 0.8;
 }
 
 #hamburger-menu div {
   height: 4px;
-  width: 24px;
+  width: 25px;
   margin: 4px;
   background-color: var(--header-white);
 }
 
 .hamburger-menu-active .line1 {
-  transform: rotate(-45deg) translate(-6px, 6.5px);
+  transform: rotate(45deg) translate(6px, 5px);
+  transition: transform var(--hamburger-menu-anim-duration) ease;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
 }
 
 .hamburger-menu-active .line2 {
-  opacity: 0%;
+  animation: fadeout var(--hamburger-menu-anim-duration) ease forwards;
 }
 
 .hamburger-menu-active .line3 {
-  transform: rotate(45deg) translate(-6px, -6.5px);
+  transform: rotate(-45deg) translate(6px, -5px);
+  transition: transform var(--hamburger-menu-anim-duration) ease;
 }
 
 #hamburger-menu:hover {
