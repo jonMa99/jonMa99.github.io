@@ -270,6 +270,7 @@ main {
     all: initial;
     list-style: none;
     justify-content: space-between;
+    display: flex;
     width: 35vw;
     transform: translate(0, -1.5vh);
   }
